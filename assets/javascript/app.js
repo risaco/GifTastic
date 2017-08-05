@@ -53,7 +53,7 @@ $(document).ready(function() {
 		console.log(characterName);
 
 		// queryURL for Giphy API
-	    queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+	    queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         characterName + "&api_key=11c9af6afb4a4da28efed9d8c79be813&limit=10";
 
 	    $.ajax({
