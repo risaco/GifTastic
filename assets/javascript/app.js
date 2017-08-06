@@ -107,9 +107,9 @@ $(document).ready(function() {
 						for (i = 0; i < (response.data).length; i++){
 
 							// create a var to hold the fixed_height animated url
-							var animateImage = response.data[i].images.fixed_height.url;
+							var animateImage = response.data[i].images.fixed_width.url;
 
-							var stillImage = response.data[i].images.fixed_height_still.url;
+							var stillImage = response.data[i].images.fixed_width_still.url;
 
 							var rating = response.data[i].rating;
 
@@ -132,7 +132,7 @@ $(document).ready(function() {
 							$(pRow).append(mainTag);
 
 							// create a new var to hold an image tag with class gif
-							var gifImage = $("<img/>").addClass("gif");
+							var gifImage = $("<img/>").addClass("img-responsive").addClass("gif");
 
 							// make src attribute equal to still url
 							$(gifImage).attr("src", stillImage);
